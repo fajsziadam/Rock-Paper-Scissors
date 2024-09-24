@@ -5,6 +5,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: antiquewhite;
 }
 
 h1{
@@ -62,4 +63,29 @@ h1{
 
 .scoreDisplay{
     font-size: 2rem;
+}
+
+/*Kisebb képernyőn (telefonon)*/
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .choices button {
+        font-size: 4rem;
+        min-width: 100px;
+        margin: 0px 5px; 
+    }
+
+    #playerDisplay, #computerDisplay {
+        font-size: 1.6rem;
+    }
+
+    #resultDisplay {
+        font-size: 3rem;
+    }
+
+    .scoreDisplay {
+        font-size: 1.5rem;
+    }
 }
